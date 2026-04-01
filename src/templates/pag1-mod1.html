@@ -1,0 +1,183 @@
+<p dir="ltr" style="text-align: left;"><br></p>
+<div class="container my-4">
+
+    <!-- Cabeçalho -->
+    <div class="card shadow-sm border-0 mb-4">
+        <div class="card-body text-center">
+            <div class="mb-3">
+                <span class="badge rounded-pill px-3 py-2" style="background-color:#198754; font-size:0.95rem;">
+                    Módulo 1
+                </span>
+            </div>
+            <h2 class="fw-bold mb-2" style="color:#198754;">Ferramentas e Ambiente</h2>
+            <p class="lead text-muted mb-0">
+                Introduziremos neste módulo as ferramentas e o ambiente que serão utilizados para compreensão da competição.
+            </p>
+        </div>
+    </div>
+
+    <!-- Progresso -->
+    <div class="card shadow-sm border-0 mb-4">
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <strong>Progresso do módulo</strong>
+                <span class="text-muted">Etapa 1 de 10</span>
+            </div>
+            <div class="progress" style="height:18px; border-radius:999px;">
+                <div class="progress-bar" role="progressbar" style="width:17%; background-color:#198754;">
+                    10%
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-4">
+
+        <!-- Header -->
+        <div class="p-4 mb-4 bg-white border rounded shadow-sm">
+            <h1 class="fw-bold" style="color:#198754">
+                <i class="bi bi-code-slash"></i> Introdução ao beecrowd
+            </h1>
+            <p class="text-muted">
+                Pratique programação com correção automática e evolua sua lógica.
+            </p>
+
+            <!-- Botão -->
+            <a href="https://www.beecrowd.com.br" target="_blank" class="btn text-white mt-2" style="background-color:#198754">
+                <i class="bi bi-box-arrow-up-right"></i> Testar no beecrowd
+            </a>
+        </div>
+
+        <!-- O que é -->
+        <div class="card mb-3" style="border-color: #198754">
+            <div class="card-body">
+                <h4 class="fw-bold mb-2" style="color: #198754">
+                    <i class="bi bi-info-circle"></i> O que é?
+                </h4>
+                <p>
+                    O <strong>BeeCrowd</strong> (antigo URI Online Judge) é uma plataforma online de prática de programação onde você pode resolver centenas de problemas variados. Quando você envia seu código, o sistema testa automaticamente contra vários casos de teste pré-definidos e fornece feedback imediato sobre a solução. Se sua resposta estiver correta em todos os testes, você recebe um "Accepted" (AC). Se houver erro, a plataforma informa o tipo de falha (resposta errada, erro de tempo, erro de execução, etc.), permitindo que você corrija e tente novamente. É excelente para treinar lógica de programação e preparação para olimpíadas.
+                </p>
+            </div>
+        </div>
+
+        <!-- Como funciona -->
+        <div class="card mb-3" style="border-color: #198754">
+            <div class="card-body">
+                <h4 class="fw-bold mb-2" style="color: #198754">
+                    <i class="bi bi-cpu"></i> Como funciona?
+                </h4>
+                <p>
+                    O fluxo é simples: todo problema no BeeCrowd segue um padrão de <strong>entrada → processamento → saída</strong>. Você lê os dados fornecidos (entrada), executa a lógica do seu programa e imprime o resultado (saída). A saída DEVE ser exatamente como especificado no problema: mesmos valores, mesma formatação, mesmos espaços. Uma diferença mínima resulta em "Wrong Answer" (WA). Por exemplo, se o programa deve imprimir "X = 10" e você imprime "X=10" ou "10", será rejeitado. O julgador automaticamente compara a saída esperada com a sua byte a byte.
+                </p>
+            </div>
+        </div>
+
+        <!-- Exemplo Entrada/Saída -->
+        <div class="card mb-3" style="border-color: #198754">
+            <div class="card-body">
+                <h4 class="fw-bold mb-2" style="color: #198754">
+                    <i class="bi bi-arrow-left-right"></i> Exemplo de Entrada e Saída
+                </h4>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>Entrada</h6>
+                        <div class="bg-light p-2 rounded">
+                            <pre><code>
+5
+3
+</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h6>Saída</h6>
+                        <div class="bg-light p-2 rounded">
+                            <pre><code>
+8
+</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Problema real -->
+        <div class="card mb-3" style="border-color: #198754">
+            <div class="card-body">
+                <h4 class="fw-bold mb-2" style="color: #198754">
+                    <i class="bi bi-journal-code"></i> Problema Exemplo (1001 - Soma)
+                </h4>
+
+                <p>
+                    Leia dois valores inteiros e apresente a soma deles.
+                </p>
+
+                <h6>Entrada</h6>
+                <div class="bg-light p-2 rounded">
+                    <pre><code>
+10
+9
+</code></pre>
+                </div>
+
+                <h6>Saída</h6>
+                <div class="bg-light p-2 rounded">
+                    <pre><code>
+X = 19
+</code></pre>
+                </div>
+
+                <h6>Código em Python</h6>
+                <div class="bg-light p-3 rounded">
+                    <pre><code>
+a = int(input())
+b = int(input())
+
+soma = a + b
+
+print("X =", soma)
+</code></pre>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Dicas -->
+        <div class="card mb-3" style="border-color: #198754">
+            <div class="card-body">
+                <h4 class="fw-bold mb-2" style="color: #198754">
+                    <i class="bi bi-lightbulb"></i> Dicas
+                </h4>
+                <ul>
+                    <li>Leia o problema com atenção;</li>
+                    <li>Respeite exatamente o formato da saída;</li>
+                    <li>Teste com exemplos antes de enviar.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function carregarCSS(url) {
+            const link = document.createElement("link");
+            link.rel = "stylesheet";
+            link.href = url;
+            document.head.appendChild(link);
+        }
+
+        // Bootstrap
+        carregarCSS("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css");
+
+        // Bootstrap Icons
+        carregarCSS("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css");
+
+        const estilo = document.createElement('style');
+        estilo.innerHTML = `
+            .card-body p {
+                text-indent: 20px;
+                text-align: justify;
+            }
+        `;
+        document.head.appendChild(estilo);
+    </script>
+</div>
