@@ -21,11 +21,11 @@
         <div class="card-body">
             <div class="d-flex justify-content-between align-items-center mb-2">
                 <strong>Progresso do módulo</strong>
-                <span class="text-muted">Etapa 1 de 10</span>
+                <span class="text-muted">Etapa 3 de 10</span>
             </div>
             <div class="progress" style="height:18px; border-radius:999px;">
-                <div class="progress-bar" role="progressbar" style="width:17%; background-color:#198754;">
-                    10%
+                <div class="progress-bar" role="progressbar" style="width:30%; background-color:#198754;">
+                    30%
                 </div>
             </div>
         </div>
@@ -35,79 +35,67 @@
         <!-- Header -->
         <div class="p-4 mb-4 bg-white border rounded shadow-sm">
             <h1 class="fw-bold" style="color:#198754">
-                <i class="bi bi-code-slash"></i> Introdução ao beecrowd
+                <i class="bi bi-code-slash"></i> Primeiras Interações
             </h1>
             <p class="text-muted">
-                Pratique programação com correção automática e evolua sua lógica.
+                Realize suas primeiras ações práticas resolvendo um problema guiado no beecrowd.
             </p>
-
-            <!-- Botão -->
-            <a href="https://www.beecrowd.com.br" target="_blank" class="btn text-white mt-2" style="background-color:#198754">
-                <i class="bi bi-box-arrow-up-right"></i> Testar no beecrowd
-            </a>
         </div>
 
-        <!-- O que é -->
+        <!-- O que são Primeiras Interações -->
         <div class="card mb-3" style="border-color: #198754">
             <div class="card-body">
                 <h4 class="fw-bold mb-2" style="color: #198754">
-                    <i class="bi bi-info-circle"></i> O que é?
+                    <i class="bi bi-info-circle"></i> O que são Primeiras Interações?
                 </h4>
                 <p>
-                    O <strong>BeeCrowd</strong> (antigo URI Online Judge) é uma plataforma online de prática de programação onde você pode resolver centenas de problemas variados. Quando você envia seu código, o sistema testa automaticamente contra vários casos de teste pré-definidos e fornece feedback imediato sobre a solução. Se sua resposta estiver correta em todos os testes, você recebe um "Accepted" (AC). Se houver erro, a plataforma informa o tipo de falha (resposta errada, erro de tempo, erro de execução, etc.), permitindo que você corrija e tente novamente. É excelente para treinar lógica de programação e preparação para olimpíadas.
+                    Após conhecer a plataforma beecrowd e preparar seu ambiente de programação, é hora de colocar a mão na massa. As primeiras interações envolvem resolver um problema simples de forma guiada, entendendo como o sistema recebe dados de entrada, como seu programa processa essas informações e como produzir a saída correta. Isso constrói a base para desafios mais complexos.
                 </p>
             </div>
         </div>
 
-        <!-- Como funciona -->
+        <!-- Entrada de Dados -->
         <div class="card mb-3" style="border-color: #198754">
             <div class="card-body">
                 <h4 class="fw-bold mb-2" style="color: #198754">
-                    <i class="bi bi-cpu"></i> Como funciona?
+                    <i class="bi bi-arrow-down-circle"></i> Recebendo Dados de Entrada
                 </h4>
                 <p>
-                    O fluxo é simples: todo problema no BeeCrowd segue um padrão de <strong>entrada → processamento → saída</strong>. Você lê os dados fornecidos (entrada), executa a lógica do seu programa e imprime o resultado (saída). A saída DEVE ser exatamente como especificado no problema: mesmos valores, mesma formatação, mesmos espaços. Uma diferença mínima resulta em "Wrong Answer" (WA). Por exemplo, se o programa deve imprimir "X = 10" e você imprime "X=10" ou "10", será rejeitado. O julgador automaticamente compara a saída esperada com a sua byte a byte.
+                    No beecrowd, os dados de entrada são fornecidos via entrada padrão (stdin). Em Python, usamos <code>input()</code> para ler linhas de texto. É importante converter para o tipo correto (int, float) se necessário. Lembre-se: a entrada pode ter múltiplas linhas, então leia quantas forem especificadas no problema.
                 </p>
             </div>
         </div>
 
-        <!-- Exemplo Entrada/Saída -->
+        <!-- Processamento -->
         <div class="card mb-3" style="border-color: #198754">
             <div class="card-body">
                 <h4 class="fw-bold mb-2" style="color: #198754">
-                    <i class="bi bi-arrow-left-right"></i> Exemplo de Entrada e Saída
+                    <i class="bi bi-cpu"></i> Processamento das Informações
                 </h4>
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <h6>Entrada</h6>
-                        <div class="bg-light p-2 rounded">
-                            <pre><code>
-5
-3
-</code></pre>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <h6>Saída</h6>
-                        <div class="bg-light p-2 rounded">
-                            <pre><code>
-8
-</code></pre>
-                        </div>
-                    </div>
-                </div>
+                <p>
+                    Após ler os dados, seu programa deve processá-los conforme a lógica do problema. Isso inclui cálculos, decisões condicionais e manipulação de dados. Mantenha o código claro e organizado para facilitar a depuração.
+                </p>
             </div>
         </div>
 
-        <!-- Problema real -->
+        <!-- Saída -->
         <div class="card mb-3" style="border-color: #198754">
             <div class="card-body">
                 <h4 class="fw-bold mb-2" style="color: #198754">
-                    <i class="bi bi-journal-code"></i> Problema Exemplo (1001 - Soma)
+                    <i class="bi bi-arrow-up-circle"></i> Produzindo a Saída Correta
                 </h4>
+                <p>
+                    A saída deve ser exatamente como especificado: formato, espaços e quebras de linha. Use <code>print()</code> em Python. Qualquer diferença resulta em erro. Teste com os exemplos fornecidos.
+                </p>
+            </div>
+        </div>
 
+        <!-- Problema Guiado -->
+        <div class="card mb-3" style="border-color: #198754">
+            <div class="card-body">
+                <h4 class="fw-bold mb-2" style="color: #198754">
+                    <i class="bi bi-journal-code"></i> Problema Guiado: Soma Simples (1001)
+                </h4>
                 <p>
                     Leia dois valores inteiros e apresente a soma deles.
                 </p>
@@ -130,15 +118,23 @@ X = 19
                 <h6>Código em Python</h6>
                 <div class="bg-light p-3 rounded">
                     <pre><code>
+# Lê o primeiro valor
 a = int(input())
+
+# Lê o segundo valor
 b = int(input())
 
+# Calcula a soma
 soma = a + b
 
+# Imprime o resultado no formato exato
 print("X =", soma)
 </code></pre>
                 </div>
 
+                <p>
+                    Teste este código no beecrowd enviando-o para o problema 1001. Observe como a entrada é lida, processada e a saída é produzida.
+                </p>
             </div>
         </div>
 
@@ -146,11 +142,11 @@ print("X =", soma)
         <div class="card mb-3" style="border-color: #198754">
             <div class="card-body">
                 <h4 class="fw-bold mb-2" style="color: #198754">
-                    <i class="bi bi-presentation"></i> Apresentação: BeeCrowd - Conceitos Iniciais
+                    <i class="bi bi-presentation"></i> Apresentação: Primeiras Interações no BeeCrowd
                 </h4>
-                <p class="text-muted mb-3">Veja abaixo a apresentação com os conceitos iniciais sobre a plataforma BeeCrowd:</p>
+                <p class="text-muted mb-3">Veja abaixo a apresentação sobre as primeiras interações:</p>
                 <iframe 
-                    src="https://docs.google.com/gview?url=https://raw.githubusercontent.com/Topolniak/Competitiva/main/src/apresentacoes/Beecrowd%20-%201.pptx&embedded=true" 
+                    src="https://docs.google.com/gview?url=https://raw.githubusercontent.com/Topolniak/Competitiva/main/src/apresentacoes/Primeiras%20Interacoes.pptx&embedded=true" 
                     style="width: 100%; height: 600px; border: 1px solid #ccc; border-radius: 8px;">
                 </iframe>
             </div>
@@ -163,17 +159,17 @@ print("X =", soma)
                     <i class="bi bi-lightbulb"></i> Dicas
                 </h4>
                 <ul>
-                    <li>Leia o problema com atenção;</li>
-                    <li>Respeite exatamente o formato da saída;</li>
-                    <li>Teste com exemplos antes de enviar.</li>
+                    <li>Leia o problema atentamente antes de codificar;</li>
+                    <li>Teste seu código localmente com os exemplos;</li>
+                    <li>Verifique a formatação da saída byte a byte.</li>
                 </ul>
             </div>
         </div>
 
         <!-- Navegação -->
-        <div class="d-flex justify-content-end gap-2 flex-wrap">
-            <a href="https://virtual.ifro.edu.br/ariquemes/mod/page/view.php?id=187248" title="Página posterior →">
-                Próxima página →
+        <div class="d-flex justify-content-between gap-2 flex-wrap">
+            <a href="https://virtual.ifro.edu.br/ariquemes/mod/page/view.php?id=187248" title="← Página anterior">
+                ← Página anterior
             </a>
         </div>
 
