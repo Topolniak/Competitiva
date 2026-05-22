@@ -1,0 +1,217 @@
+<div class="container my-4" style="background-color: #0f172a; color: #e2e8f0;">
+
+    <!-- Cabeçalho -->
+    <div class="card shadow-sm border-0 mb-4" style="background-color: #111827;">
+        <div class="card-body text-center">
+            <div class="mb-3">
+                <span class="badge rounded-pill px-3 py-2" style="background-color:#38bdf8; color: #0f172a; font-size:0.95rem;">
+                    Módulo 2
+                </span>
+            </div>
+            <h2 class="fw-bold mb-2" style="color:#38bdf8;">Tempo de execução: quando o OBI aceita ou dá tempo excedido</h2>
+            <p class="lead" style="color:#cbd5e1; text-align: center;">
+                Entenda como o juiz calcula o tempo de execução e quais padrões levam ao resultado "Tempo Excedido" ou "Aceito".
+            </p>
+        </div>
+    </div>
+
+    <!-- Progresso -->
+    <div class="card shadow-sm border-0 mb-4" style="background-color: #1e293b;">
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <strong style="color:#e2e8f0;">Progresso do módulo</strong>
+                <span style="color:#94a3b8;">Etapa 3 de 3</span>
+            </div>
+            <div class="progress" style="height:18px; border-radius:999px; background-color:#111827;">
+                <div class="progress-bar" role="progressbar" style="width:100%; background-color:#38bdf8; color:#0f172a;">
+                    100%
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+
+        <!-- Header -->
+        <div class="p-4 mb-4 border rounded shadow-sm" style="background-color: #1e293b;">
+            <h1 class="fw-bold" style="color:#38bdf8">
+                <i class="bi bi-stopwatch-fill"></i> Como o juiz da OBI mede o tempo de execução
+            </h1>
+            <p style="color:#cbd5e1;">
+                O tempo de execução depende do algoritmo e do volume de dados. Mesmo um código correto pode falhar se for muito lento para os limites do problema.
+            </p>
+        </div>
+
+        <!-- Teoria de complexidade -->
+        <div class="card mb-3" style="border-color: #38bdf8; background-color: #1e293b;">
+            <div class="card-body">
+                <h4 class="fw-bold mb-2" style="color:#38bdf8">
+                    <i class="bi bi-graph-up-arrow"></i> Complexidade de tempo e limites do problema
+                </h4>
+                <p>
+                    A OBI usa um limite de tempo para cada tarefa, por exemplo 1 a 3 segundos. O código é executado em um servidor com entrada de teste completa e se ultrapassar o limite, o resultado é <strong>Tempo Excedido</strong>.
+                </p>
+                <ul>
+                    <li><strong>O(n)</strong>: geralmente aceito para entradas com até 10^7 operações simples;</li>
+                    <li><strong>O(n log n)</strong>: aceitável para n até cerca de 10^5 ou 10^6 em muitas tarefas;</li>
+                    <li><strong>O(n^2)</strong>: só funciona para n pequeno, como 10^3 ou menos;</li>
+                    <li><strong>O(2^n) / O(n!)</strong>: só serve para n mínimo, tipicamente n ≤ 20 ou menos.</li>
+                </ul>
+                <p>
+                    Para saber se seu código será aceito, compare a complexidade do seu algoritmo com o tamanho máximo de entrada informado no enunciado.
+                </p>
+            </div>
+        </div>
+
+        <!-- Quando dá Tempo Excedido -->
+        <div class="card mb-3" style="border-color: #38bdf8; background-color: #1e293b;">
+            <div class="card-body">
+                <h4 class="fw-bold mb-2" style="color:#38bdf8">
+                    <i class="bi bi-exclamation-triangle-fill"></i> Quando o juiz diz "Tempo Excedido"
+                </h4>
+                <p>
+                    O resultado de tempo excedido aparece quando o programa não termina dentro do tempo limite usando o caso de teste mais pesado. Isso ocorre mesmo que o código esteja correto para casos menores.
+                </p>
+                <ol>
+                    <li>Algoritmo muito lento para a entrada máxima;</li>
+                    <li>Laços aninhados que causam muitas operações;</li>
+                    <li>Uso excessivo de ordenação, buscas lineares ou conversões dentro de loops;</li>
+                    <li>Leitura ou escrita lenta repetida para grandes volumes de dados.</li>
+                </ol>
+                <p>
+                    Por exemplo, um algoritmo O(n^2) com n = 10000 faria 100 milhões de operações, o que costuma ser lento demais para o tempo de competição.
+                </p>
+            </div>
+        </div>
+
+        <!-- Quando é Aceito -->
+        <div class="card mb-3" style="border-color: #38bdf8; background-color: #1e293b;">
+            <div class="card-body">
+                <h4 class="fw-bold mb-2" style="color:#38bdf8">
+                    <i class="bi bi-check-circle-fill"></i> Quando o código é aceito
+                </h4>
+                <p>
+                    Um código é aceito quando produz o resultado correto para todos os testes dentro do limite de tempo e memória. A eficiência importa tanto quanto a exatidão.
+                </p>
+                <ul>
+                    <li>Use o algoritmo correto para o tamanho da entrada;</li>
+                    <li>Evite repetir trabalho desnecessário em loops;</li>
+                    <li>Prefira operações lineares ou n log n quando possível;</li>
+                    <li>Leia dados rapidamente com `sys.stdin.readline()` ou `sys.stdin.read()` para muitos valores.</li>
+                </ul>
+                <p>
+                    Exemplo típico aceito: processar 200.000 números em O(n) lê-los, somar e imprimir o resultado sem loops extras caros.
+                </p>
+            </div>
+        </div>
+
+        <!-- Exemplos de casos -->
+        <div class="card mb-3" style="border-color: #38bdf8; background-color: #1e293b;">
+            <div class="card-body">
+                <h4 class="fw-bold mb-2" style="color:#38bdf8">
+                    <i class="bi bi-file-earmark-text-fill"></i> Exemplos de código e análise de tempo
+                </h4>
+                <p>
+                    Compare duas abordagens para o mesmo problema: dado um conjunto de números, verificar se existe um par cuja soma é 100. A primeira solução é lenta (O(n^2)) e tende a dar "Tempo Excedido" em entradas grandes; a segunda é eficiente (O(n)).
+                </p>
+                <div class="bg-slate-900 p-3 rounded" style="background-color: #020617; border: 1px solid #38bdf8;">
+                    <pre><code style="color: #38bdf8;"># Lento: O(n^2) - pode dar Tempo Excedido
+n = int(input())
+valores = list(map(int, input().split()))
+for i in range(n):
+    for j in range(n):
+        if valores[i] + valores[j] == 100:
+            print("SIM")
+            break</code></pre>
+                </div>
+                <p>
+                    Essa solução testa todos os pares, o que cresce muito rápido. Para grandes n, ela geralmente é rejeitada.
+                </p>
+                <div class="bg-slate-900 p-3 rounded" style="background-color: #020617; border: 1px solid #38bdf8;">
+                    <pre><code style="color: #38bdf8;"># Eficiente: O(n) - normalmente aceito
+import sys
+
+n = int(sys.stdin.readline())
+valores = list(map(int, sys.stdin.readline().split()))
+seen = set()
+for x in valores:
+    if 100 - x in seen:
+        print("SIM")
+        break
+    seen.add(x)
+else:
+    print("NAO")</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dicas para evitar TLE -->
+        <div class="card mb-3" style="border-color: #38bdf8; background-color: #1e293b;">
+            <div class="card-body">
+                <h4 class="fw-bold mb-2" style="color:#38bdf8">
+                    <i class="bi bi-lightbulb-fill"></i> Dicas para não levar Tempo Excedido
+                </h4>
+                <ul>
+                    <li>Entenda o enunciado e o limite de entrada antes de codar;</li>
+                    <li>Avalie a complexidade esperada: O(n), O(n log n) ou O(n^2)?;</li>
+                    <li>Use estruturas rápidas como `set`, `dict`, `list` e `deque` de forma adequada;</li>
+                    <li>Evite ordenar quando não for necessário;</li>
+                    <li>Prefira ler a entrada inteira e processar em memória quando o volume for grande.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Navegação -->
+        <div class="d-flex justify-content-between gap-2 flex-wrap">
+            <a href="https://virtual.ifro.edu.br/ariquemes/mod/page/view.php?id=189105" title="Página anterior ←">
+                ← Página anterior
+            </a>
+            <a href="#" title="Página posterior →">
+                Próxima página →
+            </a>
+        </div>
+
+    </div>
+    <script>
+        function carregarCSS(url) {
+            const link = document.createElement("link");
+            link.rel = "stylesheet";
+            link.href = url;
+            document.head.appendChild(link);
+        }
+
+        // Bootstrap
+        carregarCSS("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css");
+
+        // Bootstrap Icons
+        carregarCSS("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css");
+
+        document.body.style.color = "#e2e8f0";
+        document.body.style.minHeight = "100vh";
+
+        const estilo = document.createElement('style');
+        estilo.innerHTML = `
+            .card-body p {
+                text-indent: 20px;
+                text-align: justify;
+                color: #e2e8f0;
+            }
+            .card-body ul,
+            .card-body ol {
+                color: #e2e8f0;
+            }
+            .card-body h6,
+            .card-body li,
+            .card-body strong {
+                color: #e2e8f0;
+            }
+            a {
+                text-decoration: none;
+            }
+            main {
+                background-color: #0f172a;
+            }
+        `;
+        document.head.appendChild(estilo);
+    </script>
+</div>

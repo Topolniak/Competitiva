@@ -1,0 +1,223 @@
+<div class="container my-4" style="background-color: #0f172a; color: #e2e8f0;">
+
+    <!-- Cabeçalho -->
+    <div class="card shadow-sm border-0 mb-4" style="background-color: #111827;">
+        <div class="card-body text-center">
+            <div class="mb-3">
+                <span class="badge rounded-pill px-3 py-2" style="background-color:#38bdf8; color: #0f172a; font-size:0.95rem;">
+                    Módulo 2
+                </span>
+            </div>
+            <h2 class="fw-bold mb-2" style="color:#38bdf8;">Python para programar mais rápido</h2>
+            <p class="lead" style="color:#cbd5e1; text-align: center;">
+                Aprenda estratégias práticas e funções úteis do Python para aumentar sua velocidade e eficiência em competições.
+            </p>
+        </div>
+    </div>
+
+    <!-- Progresso -->
+    <div class="card shadow-sm border-0 mb-4" style="background-color: #1e293b;">
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <strong style="color:#e2e8f0;">Progresso do módulo</strong>
+                <span style="color:#94a3b8;">Etapa 2 de 3</span>
+            </div>
+            <div class="progress" style="height:18px; border-radius:999px; background-color:#111827;">
+                <div class="progress-bar" role="progressbar" style="width:66%; background-color:#38bdf8; color:#0f172a;">
+                    66%
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+
+        <!-- Header -->
+        <div class="p-4 mb-4 border rounded shadow-sm" style="background-color: #1e293b;">
+            <h1 class="fw-bold" style="color:#38bdf8">
+                <i class="bi bi-lightning-fill"></i> Programando com rapidez e clareza
+            </h1>
+            <p style="color:#cbd5e1;">
+                Use padrões e recursos do Python que ajudam a escrever código limpo e resolver problemas mais rapidamente durante a competição.
+            </p>
+        </div>
+
+        <!-- Estratégias gerais -->
+        <div class="card mb-3" style="border-color: #38bdf8; background-color: #1e293b;">
+            <div class="card-body">
+                <h4 class="fw-bold mb-2" style="color: #38bdf8">
+                    <i class="bi bi-rocket-fill"></i> Estratégias para codar mais rápido
+                </h4>
+                <p>
+                    A prática e a preparação ajudam a reduzir o tempo de leitura e implementação. Adote hábitos que aceleram a resolução sem perder precisão.
+                </p>
+                <ul>
+                    <li>Leia a entrada inteira antes de começar a codificar;</li>
+                    <li>Prefira escrever primeiro um esboço rápido do algoritmo;</li>
+                    <li>Use funções e variáveis com nomes curtos, mas claros;</li>
+                    <li>Reutilize padrões já conhecidos, como leitura de listas e contagem com dicionários.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Funções integradas -->
+        <div class="card mb-3" style="border-color: #38bdf8; background-color: #1e293b;">
+            <div class="card-body">
+                <h4 class="fw-bold mb-2" style="color: #38bdf8">
+                    <i class="bi bi-code-slash"></i> Funções Python que salvam tempo
+                </h4>
+                <p>
+                    O Python tem várias funções nativas e métodos que resolvem tarefas comuns rapidamente. Conhecer essas ferramentas evita escrever código manual demais.
+                </p>
+                <ul>
+                    <li><strong>len()</strong>: obtém o tamanho de strings, listas e dicionários;</li>
+                    <li><strong>sum()</strong>: soma valores de uma lista;</li>
+                    <li><strong>max(), min()</strong>: retornam o maior e o menor elemento;</li>
+                    <li><strong>sorted()</strong>: ordena listas sem modificar a original;</li>
+                    <li><strong>enumerate()</strong>: percorre itens com índice;</li>
+                    <li><strong>zip()</strong>: combina várias listas em pares;</li>
+                    <li><strong>map()</strong> e <strong>filter()</strong>: aplicam transformações e filtros em iteráveis.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Entrada e saída rápida -->
+        <div class="card mb-3" style="border-color: #38bdf8; background-color: #1e293b;">
+            <div class="card-body">
+                <h4 class="fw-bold mb-2" style="color: #38bdf8">
+                    <i class="bi bi-clipboard2-data"></i> Leitura rápida de entrada e saída
+                </h4>
+                <p>
+                    Em competições, a leitura de dados deve ser simples e eficiente. Use `sys.stdin.readline` para entrada mais rápida quando precisar processar muitas linhas. Lembrando que nem todas as bibliotecas funcionarão na competição, sys e math são exemplos de bibliotecas nativas do Python e que podem ser importadas.
+                </p>
+                <div class="bg-slate-900 p-3 rounded" style="background-color: #020617; border: 1px solid #38bdf8;">
+                    <pre><code style="color: #38bdf8;">import sys
+
+def read_ints():
+    return list(map(int, sys.stdin.readline().split()))
+
+n = int(sys.stdin.readline())
+valores = read_ints()
+print(sum(valores))</code></pre>
+                </div>
+                <p>
+                    Essa abordagem é especialmente útil em problemas com grandes volumes de dados, evitando o uso de `input()` em laços longos.
+                </p>
+            </div>
+        </div>
+
+        <!-- Padrões úteis -->
+        <div class="card mb-3" style="border-color: #38bdf8; background-color: #1e293b;">
+            <div class="card-body">
+                <h4 class="fw-bold mb-2" style="color: #38bdf8">
+                    <i class="bi bi-file-earmark-code-fill"></i> Padrões úteis no código
+                </h4>
+                <p>
+                    Alguns padrões tornam a resolução mais direta e segura. Memorize-os para reutilizar em vários problemas.
+                </p>
+                <ol>
+                    <li><strong>Contar frequências</strong> com `dict` ou `collections.Counter`;</li>
+                    <li><strong>Transformar dados</strong> com `map(int, line.split())`;</li>
+                    <li><strong>Ordenar pares</strong> com `sorted(lista, key=lambda x: x[1])`;</li>
+                    <li><strong>Iterar com índice</strong> usando `for i, valor in enumerate(lista):`;</li>
+                    <li><strong>Unir strings</strong> com `print(' '.join(str(x) for x in resultado))`.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Exemplo prático -->
+        <div class="card mb-3" style="border-color: #38bdf8; background-color: #1e293b;">
+            <div class="card-body">
+                <h4 class="fw-bold mb-2" style="color: #38bdf8">
+                    <i class="bi bi-gear-fill"></i> Exemplo prático de solução Python
+                </h4>
+                <p>
+                    Suponha que precisamos somar pares de valores em várias linhas e imprimir cada resultado rapidamente.
+                </p>
+                <div class="bg-slate-900 p-3 rounded" style="background-color: #020617; border: 1px solid #38bdf8;">
+                    <pre><code style="color: #38bdf8;">import sys
+
+entrada = sys.stdin.read().strip().split()
+if not entrada:
+    sys.exit()
+
+it = iter(entrada)
+for a, b in zip(it, it):
+    print(int(a) + int(b))</code></pre>
+                </div>
+                <p>
+                    Essa técnica usa `sys.stdin.read()` para ler tudo de uma vez e `zip(it, it)` para processar valores em pares sem um loop de índice explícito.
+                </p>
+            </div>
+        </div>
+
+        <!-- Dicas rápidas -->
+        <div class="card mb-3" style="border-color: #38bdf8; background-color: #1e293b;">
+            <div class="card-body">
+                <h4 class="fw-bold mb-2" style="color: #38bdf8">
+                    <i class="bi bi-lightning-charge-fill"></i> Dicas rápidas para competir
+                </h4>
+                <ul>
+                    <li>Não reescreva funções básicas: use `min`, `max`, `sum`, `sorted`;</li>
+                    <li>Prefira estruturas simples e legíveis em primeiro lugar;</li>
+                    <li>Teste cada parte do código com entrada pequena antes de rodar tudo;</li>
+                    <li>Se precisar, crie funções pequenas como `read_ints()` e `read_line()`;</li>
+                    <li>Use comentários curtos apenas quando necessário para lembrar a lógica.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Navegação -->
+        <div class="d-flex justify-content-between gap-2 flex-wrap">
+            <a href="https://virtual.ifro.edu.br/ariquemes/mod/page/view.php?id=188206" title="Página anterior ←">
+                ← Página anterior
+            </a>
+            <a href="https://virtual.ifro.edu.br/ariquemes/mod/page/view.php?id=189106" title="Página posterior →">
+                Próxima página →
+            </a>
+        </div>
+
+    </div>
+    <script>
+        function carregarCSS(url) {
+            const link = document.createElement("link");
+            link.rel = "stylesheet";
+            link.href = url;
+            document.head.appendChild(link);
+        }
+
+        // Bootstrap
+        carregarCSS("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css");
+
+        // Bootstrap Icons
+        carregarCSS("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css");
+
+        document.body.style.color = "#e2e8f0";
+        document.body.style.minHeight = "100vh";
+
+        const estilo = document.createElement('style');
+        estilo.innerHTML = `
+            .card-body p {
+                text-indent: 20px;
+                text-align: justify;
+                color: #e2e8f0;
+            }
+            .card-body ul,
+            .card-body ol {
+                color: #e2e8f0;
+            }
+            .card-body h6,
+            .card-body li,
+            .card-body strong {
+                color: #e2e8f0;
+            }
+            a {
+                text-decoration: none;
+            }
+            main {
+                background-color: #0f172a;
+            }
+        `;
+        document.head.appendChild(estilo);
+    </script>
+</div>
